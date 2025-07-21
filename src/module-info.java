@@ -1,5 +1,7 @@
 module courseJavaFXjdbc {
-	requires javafx.controls;
-	
-	opens application to javafx.graphics, javafx.fxml;
+    requires javafx.controls;
+    requires javafx.fxml;
+
+    opens gui to javafx.fxml;
+    exports application;
 }
