@@ -4,4 +4,7 @@ module courseJavaFXjdbc {
 
     opens gui to javafx.fxml;
     exports application;
+    
+    opens model.entities to javafx.base;
+
 }
